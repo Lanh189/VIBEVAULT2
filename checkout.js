@@ -1,4 +1,4 @@
-document.getElementById('buyNowButton').addEventListener('buyNowButton', submitForm)
+document.getElementById('submit').addEventListener('click', submitForm)
 
 async function submitForm(){
     const response = await fetch('/create_payment_link',{
