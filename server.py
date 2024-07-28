@@ -13,11 +13,12 @@ app = Flask(__name__, static_folder='', static_url_path='', template_folder='')
 def create_payment():
     domain = "http://127.0.0.1:5000"
     try:
-        paymentData = PaymentData(orderCode=random.randint(1000, 99999), amount=2000, description="demo", cancelUrl= f"{domain}/cancel.html", returnUrl=f"{domain}/download.html")
+        paymentData = PaymentData(orderCode=random.randint(1000, 99999), amount=1000, description="demo", cancelUrl= f"{domain}/cancel.html", returnUrl=f"{domain}/download.html")
         payOSCreatePayment = payOS.createPaymentLink(paymentData)
-        return jsonify(payOSCreatePayment.to_json())
+        return jsonify({'payment_link': payOSCreatePayment.paymentUrl})
     except Exception as e:
-        return jsonify(error=str(e)), 403
-    
-if __name__ == '__main__':
-    app.run(port=4242)
+        return jsonify({'error': str(e)}), 403
+
+
+    if __name__ == '__main__':
+        app.run(port=4242)
