@@ -1,0 +1,34 @@
+/* Ẩn nút "Get Started Now" */
+#navbar .btn.btn-primary {
+    display: none;
+  }
+  
+  /* Thêm khoảng cách cho phần tử cuối cùng trong danh sách điều hướng */
+  .navbar-nav .nav-item:last-child {
+    margin-right: 50px; /* Điều chỉnh giá trị này theo khoảng cách mong muốn */
+  }
+ 
+  .position-absolute {
+    overflow: visible; /* Hoặc hidden, auto tùy thuộc vào yêu cầu thiết kế */
+  }
+    
+ 
+  
+  
+  .wave {
+    position: absolute; /* Đảm bảo hình ảnh không bị ảnh hưởng bởi các thuộc tính layout khác */
+    bottom: 0; /* Đặt hình ảnh ở dưới cùng của phần tử chứa */
+    left: 0; /* Đặt hình ảnh ở bên trái của phần tử chứa */
+    width: 100%; /* Đảm bảo hình ảnh rộng bằng 100% của phần tử chứa */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+    transform: translateY(0%); /* Di chuyển hình ảnh lên hoặc xuống nếu cần */
+    z-index: 1; /* Đảm bảo hình ảnh không bị che khuất bởi các phần tử khác */
+    object-fit: cover; /* Đảm bảo hình ảnh phủ toàn bộ phần tử chứa mà không bị méo */
+  }
+  .hero-background {
+    position: relative;
+    top: -60px; /* Thay đổi giá trị này để di chuyển nội dung lên phía trên */
+  }
+  
+  
+  
