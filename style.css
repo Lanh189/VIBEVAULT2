@@ -23,3 +23,51 @@ body{
 .download-btn:hover {
     background-color: RoyalBlue;
   }
+
+  /* track list */
+
+/* styles.css */
+.track-list-section {
+    background-image: url('assets/img/illustrations/bg_soundtrack.png'); /* Đường dẫn ảnh chính xác */
+    background-size: cover; /* Đảm bảo ảnh nền phủ toàn bộ phần tử */
+    background-position: center; /* Căn giữa ảnh nền */
+    background-repeat: no-repeat; /* Không lặp lại ảnh nền */
+    min-height: 300px; /* Thay đổi kích thước tối thiểu nếu cần */
+    padding: 50px 0; /* Điều chỉnh padding nếu cần */
+    overflow: hidden; /* Ẩn bất kỳ phần nào tràn ra ngoài */
+}
+
+.track-list-wrapper {
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+.track-item {
+    flex: 0 0 auto;
+    width: 200px; /* Set a fixed width for each track item */
+    margin-right: 16px; /* Space between items */
+    text-align: center;
+}
+
+.track-item img {
+    width: 100%; /* Ensure the image fits within the track item */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Optional: rounds the corners of images */
+}
+
+.track-item p {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* Optional: styling for horizontal scrollbar */
+.track-list-wrapper::-webkit-scrollbar {
+    height: 8px; /* Height of the scrollbar */
+}
+
+.track-list-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.3); /* Color of the scrollbar */
+    border-radius: 10px; /* Rounds the corners of the scrollbar */
+}
