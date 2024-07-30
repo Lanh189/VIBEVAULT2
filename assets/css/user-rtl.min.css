@@ -21,7 +21,7 @@
     left: 0; /* Đặt hình ảnh ở bên trái của phần tử chứa */
     width: 100%; /* Đảm bảo hình ảnh rộng bằng 100% của phần tử chứa */
     height: auto; /* Giữ tỷ lệ hình ảnh */
-    transform: translateY(0%); /* Di chuyển hình ảnh lên hoặc xuống nếu cần */
+    transform: translateY(5%); /* Di chuyển hình ảnh lên hoặc xuống nếu cần */
     z-index: 1; /* Đảm bảo hình ảnh không bị che khuất bởi các phần tử khác */
     object-fit: cover; /* Đảm bảo hình ảnh phủ toàn bộ phần tử chứa mà không bị méo */
   }

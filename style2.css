@@ -1,0 +1,53 @@
+/* track list */
+.titlelover-img {
+    width: 70%; /* Thu nhỏ hình ảnh xuống 80% */
+    height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị thay đổi */
+}
+
+/* styles.css */
+.track-list-section {
+    background-image: url('assets/img/illustrations/bg_soundtrack2.png'); /* Đường dẫn đến hình nền của bạn */
+    background-size: cover; /* Để hình nền bao phủ toàn bộ phần */
+    background-position: center; /* Để căn giữa hình nền */
+    background-repeat: no-repeat; /* Để không lặp lại hình nền */
+    position: relative; /* Đặt phần tử ở vị trí tương đối */
+    z-index: 1; /* Đảm bảo phần tử không bị che khuất */
+    padding: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.track-list-wrapper {
+    display: flex;
+    overflow-x: scroll; /* Cho phép cuộn ngang */
+    padding-bottom: 10px;
+    scrollbar-width: none; /* Ẩn thanh cuộn */
+}
+
+.track-list-wrapper::-webkit-scrollbar {
+    display: none; /* Ẩn thanh cuộn trên Chrome, Safari và Opera */
+}
+
+.track-item {
+    flex: 0 0 auto; /* Ngăn các phần tử co lại */
+    margin-right: 20px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.track-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.track-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.track-item:hover {
+    transform: scale(1.1); /* Phóng to khi hover */
+}

@@ -20882,9 +20882,9 @@ h5, .h5, h6, .h6 {
 }
 
 .experience {
-  background: -webkit-gradient(linear, right top, right bottom, from(#313C59), to(#161C2D));
-  background: -o-linear-gradient(top, #313C59, #161C2D);
-  background: linear-gradient(to bottom, #313C59, #161C2D);
+  background: -webkit-gradient(linear, right top, right bottom, from(#DB7A9A), to(#DB7A9A));
+  background: -o-linear-gradient(top, #DB7A9A, #161C2D);
+  background: linear-gradient(to bottom, #DB7A9A, #161C2D);
 }
 .experience .dots {
   right: -5%;
