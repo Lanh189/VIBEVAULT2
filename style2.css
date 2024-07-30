@@ -17,37 +17,62 @@
     white-space: nowrap;
 }
 
-.track-list-wrapper {
+/* .track-list-wrapper {
     display: flex;
-    overflow-x: scroll; /* Cho phép cuộn ngang */
+    overflow-x: scroll;
     padding-bottom: 10px;
-    scrollbar-width: none; /* Ẩn thanh cuộn */
-}
+    scrollbar-width: none;
+} */
 
 .track-list-wrapper::-webkit-scrollbar {
     display: none; /* Ẩn thanh cuộn trên Chrome, Safari và Opera */
 }
 
-.track-item {
-    flex: 0 0 auto; /* Ngăn các phần tử co lại */
+/* .track-item {
+    flex: 0 0 auto;
     margin-right: 20px;
     width: 150px;
     text-align: center;
     transition: transform 0.3s;
-}
+} */
 
-.track-item img {
+/* .track-item img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-}
+} */
 
-.track-item p {
+/* .track-item p {
     margin-top: 10px;
     font-size: 16px;
     color: #fff;
-}
+} */
 
 .track-item:hover {
     transform: scale(1.1); /* Phóng to khi hover */
+}
+
+.track-list-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử dãn ra khi không đủ không gian trên một dòng */
+    gap: 16px; /* Khoảng cách giữa các phần tử, có thể điều chỉnh theo nhu cầu */
+}
+
+.track-item {
+    flex: 1 1 20%; /* Các phần tử sẽ chiếm ít nhất 20% chiều ngang của container, có thể điều chỉnh theo nhu cầu */
+    box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi kích thước của phần tử */
+    border-radius: 12px; /* Điều chỉnh giá trị để thay đổi độ bo góc */
+    overflow: hidden; /* Để hình ảnh và nội dung bên trong không bị tràn ra ngoài khi bo góc */
+}
+
+
+.track-item img {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của phần tử */
+    height: auto; /* Đảm bảo tỉ lệ khung hình của hình ảnh không bị thay đổi */
+}
+
+.track-item p {
+    margin: 0;
+    padding: 8px 0; /* Khoảng cách trên và dưới văn bản, có thể điều chỉnh theo nhu cầu */
+    text-align: center;
 }

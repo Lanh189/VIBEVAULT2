@@ -10,7 +10,7 @@ async function submitForm(){
 
 $(document).ready(function() {
     $('#trackCarousel').carousel({
-        interval: 3000, // Interval for automatic sliding
-        pause: false // Disable pausing on hover
+        interval: 2000, // Change the interval for automatic sliding
+        wrap: true // Ensures the carousel loops indefinitely
     });
 });

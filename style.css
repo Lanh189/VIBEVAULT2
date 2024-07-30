@@ -24,20 +24,24 @@ body{
     background-color: RoyalBlue;
   }
 
-.carousel-item {
+.track-list-wrapper {
     display: flex;
-    overflow: hidden; /* Đảm bảo không có thanh cuộn ngang */
+    flex-wrap: wrap; /* Cho phép các phần tử dãn ra khi không đủ không gian trên một dòng */
+    gap: 16px; /* Khoảng cách giữa các phần tử, có thể điều chỉnh theo nhu cầu */
 }
+
 .track-item {
-    flex: 1 0 24%; /* Chiếm 24% chiều rộng của carousel-item */
-    margin: 0 1%; /* Khoảng cách giữa các track */
-    text-align: center;
+    flex: 1 1 20%; /* Các phần tử sẽ chiếm ít nhất 20% chiều ngang của container, có thể điều chỉnh theo nhu cầu */
+    box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi kích thước của phần tử */
 }
+
 .track-item img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của phần tử */
+    height: auto; /* Đảm bảo tỉ lệ khung hình của hình ảnh không bị thay đổi */
 }
-.carousel-inner {
-    display: flex;
-    flex-wrap: nowrap;
+
+.track-item p {
+    margin: 0;
+    padding: 8px 0; /* Khoảng cách trên và dưới văn bản, có thể điều chỉnh theo nhu cầu */
+    text-align: center;
 }
