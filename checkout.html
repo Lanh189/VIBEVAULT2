@@ -10,10 +10,10 @@
     <title>VibeVault</title>
 
     <!-- ===============================================--><!--    Favicons--><!-- ===============================================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/favicon_vv.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon_vv.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon_vv.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon_vv.png">
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
@@ -27,13 +27,14 @@
     <link href="assets/css/user-rtl.min.css" rel="stylesheet" id="user-style-rtl">
     <link href="assets/css/user.min.css" rel="stylesheet" id="user-style-default">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="style2.css" rel="stylesheet">
   </head>
 
   <body>
     <!-- ===============================================--><!--    Main Content--><!-- ===============================================-->
     <main class="main" id="top">
-      <div class="content">
-        <nav class="navbar navbar-expand-md fixed-top" id="navbar" data-navbar-soft-on-scroll="data-navbar-soft-on-scroll">
+      <div class="content" >
+        <nav class="navbar navbar-expand-md fixed-top" id="navbar" data-navbar-soft-on-scroll="data-navbar-soft-on-scroll" style="background-color: aliceblue;">
           <div class="container-fluid px-0 d-flex align-items-center">
             <a href="" class="d-flex align-items-center">
               <img src="assets/img/logos/logo1.png" alt="">
@@ -53,23 +54,25 @@
           </div>
         </nav>
         
-        <div data-bs-target="#navbar" data-bs-spy="scroll" tabindex="0">
-          <section class="hero-section overflow-hidden position-relative z-0 mb-4 mb-lg-0" id="home" >
+        <div data-bs-target="#navbar" data-bs-spy="scroll" tabindex="0" >
+          <section class="hero-section overflow-hidden position-relative z-0 mb-4 mb-lg-0" id="home"  >
             <div class="hero-background" style="background-color: #F8D1D6;">
               <div class="container">
                 <div class="row gy-4 gy-md-8 pt-9 pt-lg-0">
                   <div class="col-lg-6 text-center text-lg-start">
-                    <h1 class="fs-2 fs-lg-1 text-white fw-bold mb-2 mb-lg-x1 lh-base mt-3 mt-lg-0" style="font-family: Brush Script MT; color: black;">Harmonize Your Soul</h1> 
+                    <h1 class="fs-2 fs-lg-1 text-white fw-bold mb-2 mb-lg-x1 lh-base mt-3 mt-lg-0">
+                      <img src="assets/img/illustrations/titlelover.png" class="titlelover-img"/>
+                    </h1> 
                     <p class="fs-8 text-white mb-3 mb-lg-4 lh-lg">Feel the rhythm of peace and style with our brand. Let the music of life flow through you, bringing harmony and balance. Harmonize your soul with us, where every choice is a note in your personal symphony.</p>
                     <div class="d-flex justify-content-center justify-content-lg-start">
                         <button class="btn btn-primary btn-lg lh-xl mb-4 mb-md-5 mb-lg-7" id="submit">Buy Now</button>
                     </div>
                   </div>
-                  <div class="col-lg-6 position-lg-relative">
+                  <div class="col-lg-6 position-lg-relative" >
                     <div class="position-lg-absolute z-1 text-center">
                       <img class="img-fluid chat-image" src="assets/img/Hero/dianhac.webp" alt="" width="100" height="100" />
                       <div class="position-absolute dots d-none d-md-block">
-                        <img class="img-fluid w-50 w-lg-75" src="assets/img/illustrations/Dots.webp" alt="" />
+                        <img class="img-fluid w-50 w-lg-75" src="" alt="" />
                       </div>
                     </div>
                   </div>
@@ -77,13 +80,61 @@
               </div>
             </div>
             
-            <div class="position-absolute bottom-0 start-0 end-0 z-1"  style="background-color: #F8D1D6;" ><img class="wave" src="assets/img/illustrations/Cloud.png" alt="" />
+            <div class="position-absolute bottom-0 start-0 end-0 z-1"  style="background-color: #F8D1D6;" ><img class="wave" src="assets/img/illustrations/Cloud.png"/>
               <div class="bg-white py-2 py-md-5"  style="background-color: #F8D1D6;" ></div>
             </div>
           </section>
+          <!-- Sound track -->
+          <section class="track-list-section py-5">
+            <div class="row pb-6 pb-lg-8 g-3 g-lg-8 px-3">
+              <div class="col-12 col-md-4">
+                <h2 class="fs-3 fw-bold lh-sm mb-2 text-center" data-countup='{"endValue":849,"prefix":""}'>0</h2>
+                <h6 class="fs-8 fw-normal lh-lg mb-0 opacity-70 text-center">Albums Sold</h6>
+              </div>
+              <div class="col-12 col-md-4">
+                <h2 class="fs-3 fw-bold lh-sm mb-2 text-center" data-countup='{"endValue": 1064}'>0</h2>
+                <h6 class="opacity-70 fs-8 fw-normal lh-lg mb-0 text-center">Total Downloads</h6>
+              </div>
+              <div class="col-12 col-md-4">
+                <h2 class="fs-3 fw-bold lh-sm mb-2 text-center" data-countup='{"endValue":26395,"autoIncreasing":true}'>0</h2>
+                <h5 class="opacity-70 fs-8 fw-normal lh-lg mb-0 text-center">Monthly Listeners</h5>
+              </div>
+            </div>
+            <div class="container">
+                <h2 class="text-center mb-4">Album Tracks</h2>
+                <div class="track-list-wrapper">
+                    <div class="track-item">
+                        <img src="assets/img/soundtrack/cruel_summer.jpg" alt="Song 1" class="img-fluid">
+                        <p class="text-center">Cruel Summer</p>
+                    </div>
+                    <div class="track-item">
+                        <img src="assets/img/soundtrack/Lover.png" alt="Song 2" class="img-fluid">
+                        <p class="text-center">Lover</p>
+                    </div>
+                    <div class="track-item">
+                        <img src="assets/img/soundtrack/The_Archer.png" alt="Song 3" class="img-fluid">
+                        <p class="text-center">The Archer</p>
+                    </div>
+                    <div class="track-item">
+                      <img src="assets/img/soundtrack/Daylight.jpg" alt="Song 4" class="img-fluid">
+                      <p class="text-center">Cruel Summer</p>
+                  </div>
+                  <div class="track-item">
+                      <img src="assets/img/soundtrack/Me!.png" alt="Song 5" class="img-fluid">
+                      <p class="text-center">Lover</p>
+                  </div>
+                  <div class="track-item">
+                      <img src="assets/img/soundtrack/paperring.jpg" alt="Song 6" class="img-fluid">
+                      <p class="text-center">The Archer</p>
+                  </div>
+                    <!-- Add more track items here -->
+                </div>
+            </div>
+        </section>
+        
+      
         </div>
     </div>
-
     
     </main>
     <!-- ===============================================--><!--    JavaScripts--><!-- ===============================================-->
@@ -96,7 +147,6 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="assets/js/theme.js"></script>
     <script src="checkout.js" defer></script>
-    <button id="submit">Click</button>
   </body>
   </html>
 
