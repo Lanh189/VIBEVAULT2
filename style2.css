@@ -55,21 +55,24 @@
 .track-list-wrapper {
     display: flex;
     flex-wrap: wrap; /* Cho phép các phần tử dãn ra khi không đủ không gian trên một dòng */
-    gap: 16px; /* Khoảng cách giữa các phần tử, có thể điều chỉnh theo nhu cầu */
+    gap: 30px; /* Khoảng cách giữa các phần tử, có thể điều chỉnh theo nhu cầu */
 }
 
 .track-item {
-    flex: 1 1 20%; /* Các phần tử sẽ chiếm ít nhất 20% chiều ngang của container, có thể điều chỉnh theo nhu cầu */
-    box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi kích thước của phần tử */
-    border-radius: 12px; /* Điều chỉnh giá trị để thay đổi độ bo góc */
-    overflow: hidden; /* Để hình ảnh và nội dung bên trong không bị tràn ra ngoài khi bo góc */
+    flex: 1 1 15%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center; /* Căn giữa nội dung bên trong */
 }
-
 
 .track-item img {
-    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của phần tử */
-    height: auto; /* Đảm bảo tỉ lệ khung hình của hình ảnh không bị thay đổi */
+    width: 80%; /* Đảm bảo hình ảnh chiếm 90% chiều rộng của phần tử */
+    height: auto; /* Đảm bảo tỷ lệ khung hình của hình ảnh không bị thay đổi */
+    border-radius: 12px;
+    margin: 0 auto; /* Căn giữa hình ảnh */
+    display: block; /* Đảm bảo hình ảnh không hiển thị như inline */
 }
+
 
 .track-item p {
     margin: 0;
