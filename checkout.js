@@ -7,3 +7,10 @@ async function submitForm(){
     const payment = await response.json()
     window.open(payment.checkoutUrl)
 }
+
+$(document).ready(function() {
+    $('#trackCarousel').carousel({
+        interval: 3000, // Interval for automatic sliding
+        pause: false // Disable pausing on hover
+    });
+});

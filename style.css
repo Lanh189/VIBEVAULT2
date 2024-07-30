@@ -24,4 +24,20 @@ body{
     background-color: RoyalBlue;
   }
 
-  
+.carousel-item {
+    display: flex;
+    overflow: hidden; /* Đảm bảo không có thanh cuộn ngang */
+}
+.track-item {
+    flex: 1 0 24%; /* Chiếm 24% chiều rộng của carousel-item */
+    margin: 0 1%; /* Khoảng cách giữa các track */
+    text-align: center;
+}
+.track-item img {
+    max-width: 100%;
+    height: auto;
+}
+.carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+}
