@@ -14,3 +14,16 @@ $(document).ready(function() {
         wrap: true // Ensures the carousel loops indefinitely
     });
 });
+
+const music = document.querySelector('#music')
+const musicAlbum = document.querySelector('.music-album')
+
+// musicAlbum.addEventListener('mouseover', () => {
+//     const playPromise = music.play()
+
+//     if (playPromise) {
+//         playPromise.catch(() => {
+//             playPromise()
+//         })
+//     }
+// })
