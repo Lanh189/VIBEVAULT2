@@ -169,3 +169,25 @@
         max-width: 70px;
     }
 }
+
+footer {
+    color: white;
+  }
+  
+  footer a {
+    color: white;
+  }
+
+  .titlereview {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin: 10% 0; /* Adjust margin as needed */
+  }
+  .review {
+    transform: scale(0.8); /* Thu nhỏ 80% */
+    transform-origin: top left; /* Đảm bảo phần tử thu nhỏ từ góc trên bên trái */
+  }
+    .review p {
+    font-size: 0.6em; /* Thu nhỏ chữ xuống 80% */
+}
